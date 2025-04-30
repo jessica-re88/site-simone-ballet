@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Simone Pinheiro Ballet</title>
+
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+            flex-wrap: wrap;
+        }
+
+        header img {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #120e0e;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: hsl(325, 69%, 94%);
+            text-decoration: underline;
+        }
+
+        .banner {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .historia {
+            display: flex;
+            align-items: center;
+            margin: 40px 20px;
+            flex-wrap: wrap;
+        }
+
+        .historia img {
+            width: 600px;
+            margin-right: 50px;
+            margin-bottom: 40px;
+        }
+
+        .historia-texto {
+            font-size: 18px;
+            color: #333;
+            max-width: 600px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #ffe6f0;
+            color: rgb(107, 69, 93);
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        /* Botão flutuante */
+        .btn-topo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #db9fcebd;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            font-size: 16px;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        .btn-topo:hover {
+            background-color: #cf84c3;
+            cursor: pointer;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .historia {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .historia img {
+                width: 80%;
+                margin: 0 0 20px 0;
+            }
+
+            .historia-texto {
+                font-size: 16px;
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header img {
+                width: 120px;
+            }
+
+            .historia img {
+                width: 100%;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+                padding: 6px 10px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div id="topo"></div>
+    <header>
+        <a href="#topo"><img src="img/Logos.png" alt="Logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Minha História</a></li>
+                <li><a href="Figurinos.html">Figurinos</a></li>
+                <li><a href="Mat.Disponivel.html">Material Disponível</a></li>
+                <li><a href="Contacto.html">Contacte-nos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <img class="banner" src="img/2.png" alt="Banner"><br><br><br>
+
+    <section id="index.html">
+        <h1 align="center">Minha História</h1>
+
+        <div class="historia">
+            <img src="img/Simone1.png" alt="Simone" >
+            <div class="historia-texto">
+                <h2 align="center">Meu nome é Simone Pinheiro, eu atuo na área desde 1996. Comecei muito jovem como aprendiz. 
+                E hoje já a nível profissional eu atendo a várias companhias de ballet, 
+                levando a minha arte através das gerações.<br><br> Sou mãe, avó e possuo uma linda família,
+                sempre lutei pelos meus objetivos e nunca desisti, mesmo quando as portas se apresentavam fechadas para mim.
+                Creio ser este o segredo de conseguir me manter a quase 30 anos no mercado.<br><br> 
+                Convido-te hoje a imergir neste mundo encantado que é a arte da dança.</h2>
+            </div>
+        </div>
+    </section>
+    <!-- Botão flutuante para voltar ao topo -->
+    <a href="#topo" class="btn-topo">↑ Voltar ao Topo</a>
+    <footer>
+        <h4>2025 - Todos os Direitos Reservados - Simone Pinheiro - Figurinista Ballet</h4>
+    </footer>
+
+</body>
+</html>
+
+

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Simone Pinheiro Ballet</title>
+
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+            flex-wrap: wrap;
+        }
+
+        header img {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #120e0e;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: hsl(325, 69%, 94%);
+            text-decoration: underline;
+        }
+
+        .banner {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .fotos-galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .fotos-galeria img {
+            width: 170px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .fotos-galeria img:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .formulario {
+            background-color: #ffe6f0;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #ccc;
+            text-align: center;
+        }
+
+        form input[type="text"], form input[type="file"], form textarea {
+            width: 90%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"], form input[type="reset"] {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #e091b2;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover, form input[type="reset"]:hover {
+            background-color: #d37398;
+        }
+
+        .localizacao {
+            max-width: 90%;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 450px;
+            border: 0;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #ffe6f0;
+            color: rgb(107, 69, 93);
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        /* Botão flutuante */
+        .btn-topo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #db9fcebd;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            font-size: 16px;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        .btn-topo:hover {
+            background-color: #db86d0;
+            cursor: pointer;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 20px 0;
+            }
+
+            .fotos-galeria img {
+                width: 120px;
+                height: 140px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header img {
+                width: 120px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+                padding: 6px 10px;
+            }
+
+            .fotos-galeria img {
+                width: 100px;
+                height: 120px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div id="topo"></div>
+    <header>
+        <a href="#topo"><img src="img/Logos.png" alt="Logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Minha História</a></li>
+                <li><a href="Figurinos.html">Figurinos</a></li>
+                <li><a href="Mat.Disponivel.html">Material Disponível</a></li>
+                <li><a href="Contacto.html">Contacte-nos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img class="banner" src="img/3.png" alt="Banner"><br><br><br>
+
+    <section id="Contacto.html">
+        <h1 align="center">Contacte-nos</h1>
+
+        <div class="historia">
+            <div class="fotos-galeria">
+                <img src="img1/s21.jpg" alt="Foto 1">
+                <img src="img1/s20.jpg" alt="Foto 2">
+                <img src="img1/17.jpg" alt="Foto 3">
+                <img src="img1/s23.jpg" alt="Foto 4">
+            </div>
+            <div class="historia-texto"><br><br><br>
+                <h3 align="center">Gostaria de conhecer melhor meu trabalho ou fazer um orçamento, entre em contato comigo e minha equipe, estamos prontos para atendê-lo.<br><br> 
+                Se você gosta de costurar e gostaria de aprender um pouco mais desta arte, deixe seu currículo conosco.<br> 
+                 Estou sempre à procura de novos talentos para agregar à equipe que está sempre crescendo.<br><br> 
+                Convido você a mergulhar neste mundo encantado que é a arte da dança, onde você consegue viver da sua Arte.</h3>
+            </div>
+        </div>
+    </section>
+
+    <div class="formulario">
+        <h3>Preencha o seguinte formulário e contacte-nos.</h3>
+        <form>
+            Seu nome:<br> 
+            <input type="text" name="Nome"><br>
+
+            Seu email:<br> 
+            <input type="text" name="email"><br>
+
+            Anexo:<br> 
+            <input type="file" name="anexo"><br>
+
+            A sua mensagem:<br> 
+            <textarea rows="8" cols="50"></textarea><br>
+
+            <input type="submit" value="Submeter">
+            <input type="reset" value="Limpar">
+        </form>
+    </div>
+
+    <div class="localizacao">
+        <h1>A nossa localização:</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.706637855012!2d-42.978066223812334!3d-22.440064921359607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99b318cdde6dad%3A0x25d51118631aaae2!2sR.%20Mato%20Grosso%2C%20854%20-%20Santa%20Cecilia%2C%20Teres%C3%B3polis%20-%20RJ%2C%2025957-250%2C%20Brasil!5e0!3m2!1spt-PT!2spt!4v1745779222010!5m2!1spt-PT!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Botão flutuante para voltar ao topo -->
+    <a href="#topo" class="btn-topo">↑ Voltar ao Topo</a>
+    <footer>
+        <h4>2025 - Todos os Direitos Reservados - Simone Pinheiro - Figurinista Ballet</h4>
+    </footer>
+
+</body>
+</html>
+
+
+

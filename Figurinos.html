@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Simone Pinheiro Ballet</title>
+
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+            flex-wrap: wrap;
+        }
+
+        header img {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #120e0e;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: hsl(325, 69%, 94%);
+            text-decoration: underline;
+        }
+
+        .banner {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .fotos-galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .fotos-galeria img {
+            width: 170px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .fotos-galeria img:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #ffe6f0;
+            color: rgb(107, 69, 93);
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        /* Botão flutuante */
+        .btn-topo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #db9fcebd;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            font-size: 16px;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        .btn-topo:hover {
+            background-color: #ec95da;
+            cursor: pointer;
+        }
+
+        /* Modal */
+        .modal {
+            display: none; 
+            position: fixed;
+            z-index: 1000;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 10px;
+        }
+
+        .modal-content, .close {
+            animation-name: zoom;
+            animation-duration: 0.3s;
+        }
+
+        @keyframes zoom {
+            from {transform: scale(0)} 
+            to {transform: scale(1)}
+        }
+
+        .close {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 30px 0;
+            }
+
+            .fotos-galeria img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header img {
+                width: 120px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+                padding: 6px 10px;
+            }
+
+            .fotos-galeria img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div id="topo"></div>
+    <header>
+        <a href="#topo"><img src="img/Logos.png" alt="Logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Minha História</a></li>
+                <li><a href="Figurinos.html">Figurinos</a></li>
+                <li><a href="Mat.Disponivel.html">Material Disponível</a></li>
+                <li><a href="Contacto.html">Contacte-nos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img class="banner" src="img/1.png" alt="Banner"><br><br>
+
+    <section id="Figurinos.html">
+        <h1 align="center">Figurinos</h1>
+
+        <div class="fotos-galeria">
+            <img src="img1/1.jpg" alt="Foto 1">
+            <img src="img1/2n.jpg" alt="Foto 2">
+            <img src="img1/3n.jpg" alt="Foto 3">
+            <img src="img1/11.jpg" alt="Foto 4">
+            <img src="img1/5n.jpg" alt="Foto 5">
+            <img src="img1/6.jpg" alt="Foto 6">
+            <img src="img1/7.jpg" alt="Foto 7">
+            <img src="img1/8.jpg" alt="Foto 8">
+            <img src="img1/31.jpg" alt="Foto 9">
+            <img src="img1/32.jpg" alt="Foto 10">
+            <img src="img1/35.png" alt="Foto 11">
+            <img src="img1/36.png" alt="Foto 12">
+            <img src="img1/38.png" alt="Foto 13">
+            <img src="img1/39.png" alt="Foto 14">
+            <img src="img1/40.png" alt="Foto 15">
+            <img src="img1/42.png" alt="Foto 16">
+            <img src="img1/45.png" alt="Foto 17">
+            <img src="img1/48.png" alt="Foto 18">
+            <img src="img1/50.png" alt="Foto 19">
+            <img src="img1/51.png" alt="Foto 20">
+            <img src="img1/52.png" alt="Foto 21">
+            <img src="img1/59.png" alt="Foto 22">
+            <img src="img1/54.png" alt="Foto 23">
+            <img src="img1/58.png" alt="Foto 24">
+            <img src="img1/68.png" alt="Foto 25">
+            <img src="img1/72.png" alt="Foto 26">
+            <img src="img1/73.png" alt="Foto 27">
+            <img src="img1/74.png" alt="Foto 28">
+            <img src="img1/55.png" alt="Foto 29">
+            <img src="img1/4n.jpg" alt="Foto 30">
+            <img src="img1/9.jpg" alt="Foto 31">
+            <img src="img1/10.jpg" alt="Foto 32">
+            <img src="img1/13.jpg" alt="Foto 33">
+            <img src="img1/14.jpg" alt="Foto 34">
+            <img src="img1/18.jpg" alt="Foto 35">
+            <img src="img1/19.jpg" alt="Foto 36">
+            <img src="img1/20.jpg" alt="Foto 37">
+            <img src="img1/21.jpg" alt="Foto 38">
+            <img src="img1/22.jpg" alt="Foto 39">
+            <img src="img1/23.jpg" alt="Foto 40">
+            <img src="img1/24.jpg" alt="Foto 41">
+            <img src="img1/28.jpg" alt="Foto 42">
+            <img src="img1/26.jpg" alt="Foto 43">
+            <img src="img1/27.jpg" alt="Foto 44">
+            <img src="img1/30.jpg" alt="Foto 45">
+            <img src="img1/47.png" alt="Foto 46">
+            <img src="img1/46.png" alt="Foto 47">
+            <img src="img1/37.png" alt="Foto 48">
+            <img src="img1/41.png" alt="Foto 49">
+            <img src="img1/49.png" alt="Foto 50">
+            <img src="img1/53.png" alt="Foto 51">
+            <img src="img1/56.png" alt="Foto 52">
+            <img src="img1/57.png" alt="Foto 53">
+            <img src="img1/60.png" alt="Foto 54">
+            <img src="img1/62.png" alt="Foto 55">
+            <img src="img1/63.png" alt="Foto 56">
+            <img src="img1/64.png" alt="Foto 57">
+            <img src="img1/65.png" alt="Foto 58">
+            <img src="img1/66.png" alt="Foto 59">
+            <img src="img1/67.png" alt="Foto 60">
+            <img src="img1/69.png" alt="Foto 61">
+            <img src="img1/70.png" alt="Foto 62">
+            <img src="img1/71.png" alt="Foto 63">
+        </div>
+    </section>
+
+    <!-- Modal para ampliar imagem -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgAmpliada">
+    </div>
+
+    <footer>
+        <h4>2025 - Todos os Direitos Reservados - Simone Pinheiro - Figurinista Ballet</h4>
+    </footer>
+
+    <!-- Botão flutuante para voltar ao topo -->
+    <a href="#topo" class="btn-topo">↑ Voltar ao Topo</a>
+
+    <script>
+        const modal = document.getElementById("myModal");
+        const modalImg = document.getElementById("imgAmpliada");
+        const closeBtn = document.getElementsByClassName("close")[0];
+
+        // Adiciona evento de clique para todas as imagens
+        document.querySelectorAll(".fotos-galeria img").forEach(img => {
+            img.addEventListener("click", () => {
+                modal.style.display = "block";
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+            });
+        });
+
+        // Fecha ao clicar no X
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Fecha ao clicar fora da imagem
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
